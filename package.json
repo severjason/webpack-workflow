@@ -2,6 +2,10 @@
   "name": "webpack-workflow",
   "version": "1.0.0",
   "description": "my webpack workflow",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/severjason/webpack-workflow.git"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,5 +15,12 @@
     "workflow"
   ],
   "author": "severjason",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^2.3.2",
+    "webpack": "^2.5.1"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
 }
