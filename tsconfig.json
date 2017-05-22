@@ -2,7 +2,7 @@
   "compilerOptions": {
     "noImplicitAny": true,
     "target": "es6",
-    "outDir": "app/public/js"
+    "outDir": "public/js"
   },
   "exclude": [
     "node_modules"
