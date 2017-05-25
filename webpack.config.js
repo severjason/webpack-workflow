@@ -41,10 +41,10 @@ module.exports = {
         ]
     },
     plugins: [
-        /*new webpack.optimize.CommonsChunkPlugin({
+        new webpack.optimize.CommonsChunkPlugin({
             name: "vendor",
             minChunks: Infinity,
-        }),*/
+        }),
         new webpack.optimize.UglifyJsPlugin({
             sourceMap: true,
             debug: true,
