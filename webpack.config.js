@@ -9,6 +9,7 @@ module.exports = {
     output: {
         path: path.join(__dirname, "public/js"),
         filename: "[name].js",
+        publicPath: 'js/'
     },
     resolve: {
         extensions: [".ts", ".js"],
