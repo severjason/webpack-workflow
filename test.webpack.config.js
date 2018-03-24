@@ -4,21 +4,24 @@ module.exports = {
     entry: './app/test/unit/index.spec.ts',
     output: {
         path: path.join(__dirname, "test/unit"),
-        filename: "[name].js",
+        filename: "[name].js"
     },
     resolve: {
-        extensions: [".ts", ".js"],
+        extensions: [".ts", ".js"]
     },
     module: {
-        loaders: [
+        rules: [
             {
                 test: /\.tsx?$/,
-                loader: ["babel-loader", "ts-loader"],
-                exclude: /node_modules/,
-            },
+                use: [
+                    "babel-loader",
+                    "ts-loader"
+                ],
+                exclude: /node_modules/
+            }
         ]
     },
     plugins: [
 
-    ],
+    ]
 };

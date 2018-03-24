@@ -18,7 +18,7 @@ module.exports = function (config) {
         files: [
             // 'app/ts/**/*.spec.ts',
             'node_modules/babel-polyfill/dist/polyfill.js',
-            'app/test/unit/index.spec.ts',
+            'app/test/unit/index.spec.ts'
         ],
 
 
@@ -27,14 +27,14 @@ module.exports = function (config) {
 
 
         karmaTypescriptConfig: {
-            tsconfig: "./tsconfig.json", // this will get rid of all compiler error messages
+            tsconfig: "./tsconfig.json" // this will get rid of all compiler error messages
         },
 
 
         // preprocess matching files before serving them to the browser
         // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
         preprocessors: {
-            'app/test/unit/index.spec.ts': ['webpack', 'babel'],
+            'app/test/unit/index.spec.ts': ['webpack', 'babel']
             // 'app/ts/**/*.spec.ts': ['webpack', 'karma-typescript', 'babel'],
         },
 
@@ -64,7 +64,7 @@ module.exports = function (config) {
 
         // start these browsers
         // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-        browsers: ['PhantomJS'],
+        browsers: ['Chrome'],
 
 
         // Continuous Integration mode
@@ -76,7 +76,7 @@ module.exports = function (config) {
         concurrency: Infinity,
 
         // webpack configuration
-        webpack: webpackConfig,
+        webpack: webpackConfig
 
         // webpack-dev-middleware configuration
         /*webpackMiddleware: {
